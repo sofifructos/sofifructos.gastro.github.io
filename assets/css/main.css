@@ -13,8 +13,8 @@
 /* Fonts */
 :root {
   --default-font: "New Frank",  system-ui, -apple-system, "Segoe UI", New Frank, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Gelasio",  sans-serif;
-  --nav-font: "Gelasio",  sans-serif;
+  --heading-font: "https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap",  sans-serif;
+  --nav-font: "https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
