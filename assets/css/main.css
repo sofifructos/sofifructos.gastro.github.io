@@ -1173,6 +1173,12 @@ padding-top: 70px;
 
 }
 
+.icono {
+  width: 40px;
+  height: 40px;
+ 
+  }
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1340,7 +1346,8 @@ padding-top: 70px;
 }
 
 .services {
-  background-image: url("../img/CALIDAD.png");
+  
+  background-color: #F8F3E7;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: right ;
@@ -1479,6 +1486,8 @@ padding-top: 70px;
 
 .pricing {
   background-image: url("../img/cursos1.png");
+  background-position: center;
+  background-size: cover;
  
 }
 .pricing .section-title {
@@ -1885,6 +1894,7 @@ padding-top: 70px;
 .team.team.section {
   background-image: url("../img/chef.png");
   background-size: cover;
+  
 }
 
 .team .section-title p{
@@ -2101,7 +2111,7 @@ color: #F8F3E7;
 }
 
 .contact {
-  background-image: url("../img/contacto.png");
+  background-color: #F8F3E7;
   background-size: cover;
 }
 
