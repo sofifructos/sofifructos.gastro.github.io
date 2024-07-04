@@ -1128,12 +1128,15 @@ padding-top: 70px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   height: 100%;
+  
 }
 
 .features .feature-box h3 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
   margin: 0;
+  color: #F8F3E7;
+  font-family: "new frank";
 }
 
 .features .feature-box i {
@@ -1151,6 +1154,29 @@ padding-top: 70px;
   background: var(--accent-color);
   color: var(--contrast-color);
 }
+
+.features.features.section {
+  background-image: url("../img/cursos1.png");
+  background-size: cover;
+padding-bottom: 150px;
+padding-top: 120px;
+}
+
+.features.features p {
+  color: #F8F3E7;
+
+}
+
+.features.features h2 {
+  color: #F8F3E7;
+
+}
+
+.features.features.img-fluid  {
+  padding-bottom: 500px;
+
+}
+
 
 /*--------------------------------------------------------------
 # Alt Features Section
@@ -1719,7 +1745,8 @@ padding-top: 70px;
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  background-color: var(--surface-color);
+  background-image: url("../img2/cajacontacto.png");;
+  background-size: cover;
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   padding: 30px;
@@ -1731,19 +1758,25 @@ padding-top: 70px;
   transition: 0.3s;
 }
 
+.testimonials .stars {
+  color: #AC7536 ;
+  
+}
+
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
+  
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: #AC7536;
   margin: 0 1px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 50%;
-  border: 4px solid var(--background-color);
+  
+  
   margin: 0 auto;
 }
 
@@ -1751,17 +1784,23 @@ padding-top: 70px;
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: #F8F3E7;
+  
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
+  color: #F8F3E7;
+  font-family: "new frank";
+  font-weight: 400;
 }
 
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  color: #F8F3E7;
 }
 
 .testimonials .swiper-wrapper {

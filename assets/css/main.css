@@ -2040,12 +2040,19 @@ color: #F8F3E7;
   transform: scale(1.1);
 }
 
+.icono {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  }
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
   background-image: url("../img/marco.png");
   background-size: cover;
+  background-position: center;
   padding: 30px;
 }
 
@@ -2071,6 +2078,7 @@ color: #F8F3E7;
 .contact .php-email-form {
   background-image: url("../img/cajacontacto.png");
   background-size: cover;
+  background-position: center;
   padding: 30px;
   height: 100%;
 }
