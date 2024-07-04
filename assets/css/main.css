@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "New Frank",  system-ui, -apple-system, "Segoe UI", New Frank, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Gelasio", "Playfair Display", sans-serif;
-  --nav-font: "Gelasio", "Playfair Display" ,sans-serif;
+  --default-font: "New Frank", 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+  --heading-font:'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
+  --nav-font: 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -871,8 +871,9 @@ section,
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 40px;
+  margin: 0PX;
+  margin-right: 50px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 48px;
   color:#F8F3E7
@@ -881,7 +882,7 @@ section,
 .hero p {
   color: #F8F3E7; 
   opacity: 0,1;
-  margin: 5px 0 30px 0;
+  margin: 22px 0 30px 0;
   font-size: 17px;
   font-weight: 400;
 }
@@ -889,7 +890,7 @@ section,
 .hero .btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1176,7 +1177,7 @@ padding-top: 70px;
 .icono {
   width: 40px;
   height: 40px;
- 
+  margin-right: 10px;
   }
 
 /*--------------------------------------------------------------
