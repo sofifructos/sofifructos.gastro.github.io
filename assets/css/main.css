@@ -12,8 +12,8 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "New Frank", "Roboto";
-  --heading-font:'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
+  --default-font: "New Frank", "Roboto", 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+  --heading-font: 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
   --nav-font: 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
   font-weight: 600;
 }
@@ -1369,33 +1369,33 @@ padding-top: 70px;
 # TALLERES
 --------------------------------------------------------------*/
 .pricing .pricing-tem {
-  background-image: url("../img/marcocursos.png") ;
-  background-size: cover;
-  background-image: url("../img/marcocursos.png") ;
-  padding: 40px 40px;
-  padding-bottom: 150px;
+ background-image:url("../img/marcocursos.png");
+ background-size: cover;
+
+  box-shadow: url("../img/marcocursos.png");
+  padding: 60px 26px;
   text-align: center;
-  border-radius: 4px;
+ padding-bottom: 90PX;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
-  height: 80%;
+  height: 100%;
   
 }
 
-.pricing .pricing-tem:hover {
+/*.pricing .pricing-tem:hover {
   background-image: url("../img/marcocursos.png") ;
 
-}
+}*/
+
+
 
 @media (min-width: 1200px) {
   .pricing .pricing-tem:hover {
     transform: scale(1.1);
-    background-image: url("../img/marcocursos.png") ;
-    color: #F8F3E7;
+   
   }
 }
-
 
 .pricing h3 {
   font-weight: 100;
@@ -1414,11 +1414,13 @@ padding-top: 70px;
 }
 
 .pricing h4 {
+  font-family: "New Frank";
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 0px 100px;
   color: #F8F3E7;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
 }
 
@@ -1457,6 +1459,7 @@ padding-top: 70px;
   text-align: center;
   line-height: 26px;
   font-size: 16px;
+ 
   margin-bottom: 25px;
   padding-top: 20px;
 }
@@ -1471,14 +1474,15 @@ padding-top: 70px;
 }
 
 .pricing .btn-buy {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
-  color: var(--accent-color);
+  background: var(--accent-color);
+  padding: 8px 40px 7px 40px;
+  border-radius: 8px;
+  color: #F8F3E7;
   transition: none;
   font-size: 16px;
+  position: center;
   font-weight: 400;
-  font-family: var(--heading-font);
+  font-family: var(--default-color);
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid var(--accent-color);
@@ -1486,7 +1490,7 @@ padding-top: 70px;
 
 .pricing .btn-buy:hover {
   background: var(--accent-color);
-  color: var(--contrast-color);
+  color:#AC7536;
 }
 
 .pricing .featured {
@@ -1507,8 +1511,11 @@ padding-top: 70px;
   background-image: url("../img/cursos1.png");
   background-position: center;
   background-size: cover;
+  padding-bottom: 220px;
+ }
+
+
  
-}
 .pricing .section-title {
   padding-top: 80px;
   padding-bottom: 20px;
@@ -1520,10 +1527,6 @@ padding-top: 70px;
   background-color: #4d3c1500;
 }
 
-.pricing .icono {
-
- 
-  }
 
 
   .pricing .icono2 {
@@ -1542,7 +1545,7 @@ padding-top: 70px;
 .faq .faq-container .faq-item {
   position: relative;
   padding: 20px 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid color-mix(in srgb, #AC7536, transparent 85%);
   overflow: hidden;
 }
 
@@ -1551,6 +1554,7 @@ padding-top: 70px;
 }
 
 .faq .faq-container .faq-item h3 {
+  font-family: New Frank, Roboto;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
