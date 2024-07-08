@@ -1247,10 +1247,10 @@ padding-top: 70px;
   color: #102A4B;
 }
 
-.services .service-item.item-cyan:hover {
+/*.services .service-item.item-cyan:hover {
   background: #102A4B;
   
-}
+}/*
 
 /*.services .service-item.item-orange {
   border-bottom: 3px solid #102A4B;
@@ -1265,9 +1265,9 @@ padding-top: 70px;
   color: #102A4B;
 }
 
-.services .service-item.item-orange:hover {
+/*.services .service-item.item-orange:hover {
   background: #102A4B;
-}
+}/*
 
 /*.services .service-item.item-teal {
   border-bottom: 3px solid #102A4B;
@@ -1282,9 +1282,9 @@ padding-top: 70px;
   color: #102A4B;
 }
 
-.services .service-item.item-teal:hover {
+/*.services .service-item.item-teal:hover {
   background: #102A4B;
-}
+}/*
 
 /*.services .service-item.item-red {
   border-bottom: 3px solid #df1529;
@@ -1337,10 +1337,16 @@ padding-top: 70px;
   background: #f3268c;
 } */
 
-.services .service-item:hover h3,
+/*.services .service-item:hover h3,    
 .services .service-item:hover p,
 .services .service-item:hover .read-more {
   color: #F8F3E7;
+}
+
+.services .service-item:hover img{
+  background-image: url("../img/calidad3.png");
+  background-size: cover;
+  
 }
 
 .services .service-item:hover .icon {
@@ -1355,7 +1361,7 @@ padding-top: 70px;
   background-position: right ;
   padding: 0px 0;
  
-}
+}*/
 
 
 
@@ -1363,9 +1369,11 @@ padding-top: 70px;
 # TALLERES
 --------------------------------------------------------------*/
 .pricing .pricing-tem {
-  background-color: var(--surface-color);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  background-image: url("../img/marcocursos.png") ;
+  background-size: cover;
+  background-image: url("../img/marcocursos.png") ;
   padding: 40px 40px;
+  padding-bottom: 150px;
   text-align: center;
   border-radius: 4px;
   position: relative;
@@ -1375,20 +1383,26 @@ padding-top: 70px;
   
 }
 
+.pricing .pricing-tem:hover {
+  background-image: url("../img/marcocursos.png") ;
+
+}
+
 @media (min-width: 1200px) {
   .pricing .pricing-tem:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    background-image: url("../img/marcocursos.png") ;
     color: #F8F3E7;
   }
 }
+
 
 .pricing h3 {
   font-weight: 100;
   font-size: 20px;
   margin-bottom: 15px;
   color: #F8F3E7;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .pricing p {
@@ -1410,19 +1424,20 @@ padding-top: 70px;
 
 .pricing .price {
   font-size: 36px;
-  color: var(--heading-color);
+  color: #F8F3E7;
   font-weight: 600;
   font-family: var(--heading-font);
 }
 
 .pricing .price sup {
   font-size: 20px;
+  color: #F8F3E7;
   top: -15px;
   left: -3px;
 }
 
 .pricing .price span {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #F8F3E7;
   font-size: 16px;
   font-weight: 300;
 }
@@ -1438,15 +1453,16 @@ padding-top: 70px;
 .pricing ul {
   padding: 0;
   list-style: none;
-  color: var(--default-color);
+  color: #F8F3E7;
   text-align: center;
   line-height: 26px;
   font-size: 16px;
   margin-bottom: 25px;
+  padding-top: 20px;
 }
 
 .pricing ul li {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .pricing ul .na {
@@ -1484,6 +1500,7 @@ padding-top: 70px;
   padding: 1px 0 3px 0;
   background: var(--accent-color);
   color: var(--contrast-color);
+  margin-left: 10px;
 }
 
 .pricing {
@@ -1502,6 +1519,21 @@ padding-top: 70px;
 
   background-color: #4d3c1500;
 }
+
+.pricing .icono {
+
+ 
+  }
+
+
+  .pricing .icono2 {
+    width: 200px;
+    position: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  
+    }
+
 
 
 /*--------------------------------------------------------------
@@ -1704,7 +1736,8 @@ padding-top: 70px;
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  background-color: var(--surface-color);
+  background-image: url("../img2/cajacontacto.png");;
+  background-size: cover;
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
   padding: 30px;
@@ -1716,19 +1749,25 @@ padding-top: 70px;
   transition: 0.3s;
 }
 
+.testimonials .stars {
+  color: #AC7536 ;
+  
+}
+
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
+  
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: #AC7536;
   margin: 0 1px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 50%;
-  border: 4px solid var(--background-color);
+  
+  
   margin: 0 auto;
 }
 
@@ -1736,17 +1775,23 @@ padding-top: 70px;
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: #F8F3E7;
+  
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
+  color: #F8F3E7;
+  font-family: "new frank";
+  font-weight: 400;
 }
 
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  color: #F8F3E7;
 }
 
 .testimonials .swiper-wrapper {
@@ -1793,122 +1838,6 @@ padding-top: 70px;
     transform: scale(1.12);
   }
 }
-
-/*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
-.team .team-member {
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  transition: 0.3s;
-  
-}
-
-.team .team-member .member-img {
-  position: relative;
-  overflow: hidden;
-  
-}
-
-.team .team-member .member-img:after {
-  position: absolute;
-  content: "";
-  left: -1px;
-  right: -1px;
-  bottom: -1px;
-  height: 100%;
-  background-color: var(--surface-color);
-  -webkit-mask: url("../img/team-shape.svg") no-repeat center bottom;
-  mask: url("../img/team-shape.svg") no-repeat center bottom;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  z-index: 1;
-}
-
-.team .team-member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: color-mix(in srgb, var(--background-color), transparent 60%);
-  z-index: 2;
-  
-}
-
-.team .team-member .social a {
-  transition: color 0.3s;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-
-.team .team-member .social a:hover {
-  color: var(--default-color);
-}
-
-.team .team-member .social i {
-  font-size: 18px;
-}
-
-.team .team-member .member-info {
-  padding: 20px 15px 30px 15px;
-  
-}
-
-.team .team-member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #F8F3E7;
-}
-
-.team .team-member .member-info span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  color: #F8F3E7;
-}
-
-.team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 26px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.team .team-member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.team .team-member:hover .social {
-  right: 8px;
-  opacity: 1;
-}
-
-.team.team.section {
-  background-image: url("../img/chef.png");
-  background-size: cover;
-  
-}
-
-.team .section-title p{
-  color: #F8F3E7;
-  padding-bottom: 10px;
-}
-
-.team .section-title h2{
-  color: #F8F3E7;
-  padding-top: 40px;
-}
-
 
 
 /*--------------------------------------------------------------
