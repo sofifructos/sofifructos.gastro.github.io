@@ -11,12 +11,14 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-  --default-font: "New Frank", "Roboto", 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
-  --heading-font: 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
-  --nav-font: 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
+  --default-font:  'Roboto', 'New Frank', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+  --heading-font: 'Gelasio', 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
+  --nav-font: 'Gelasio', 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
   font-weight: 600;
 }
 
@@ -213,6 +215,7 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --background-color: #102A4B;
+  padding: 16px;
 }
 
 /* Index Page Header on Scroll
@@ -876,7 +879,7 @@ section,
 .hero h1 {
   margin: 0PX;
   margin-right: 50px;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 48px;
   color:#F8F3E7
@@ -886,8 +889,9 @@ section,
   color: #F8F3E7; 
   opacity: 0,1;
   margin: 22px 0 30px 0;
-  font-size: 17px;
-  font-weight: 400;
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .hero .btn-get-started {
@@ -978,31 +982,32 @@ section,
 .about .content {
   background-image: url("../img/caja1.png");
   padding: 70px;
+  background-size: cover;
   width: 100%;
  position: static;
 }
 
 .about .content h3 {
-  font-size: 14px;
- 
-  font-weight: 700;
+  font-size: 15px;
   color: var(#F8F3E7);
   text-transform: uppercase;
   color:#F8F3E7;
-  font-family: "new-frank", sans-serif;
-  font-weight: 700;
+  font-family: "roboto", "new frank";
+  font-weight: 500;
 
 }
 
 .about .content h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color:#F8F3E7;
 }
 
 .about .content p {
+  font-size: 17px;
   margin: 15px 0 30px 0;
-  line-height: 24px;
+  line-height: 25px;
+  font-weight: 400;
   color:#F8F3E7;
 }
 
@@ -1193,11 +1198,15 @@ padding-top: 70px;
   height: 100%;
   padding: 80px 40px;
   padding: auto;
-
-
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+}
+
+
+.services .service-item p {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .services .service-item .icon {
@@ -1372,19 +1381,29 @@ padding-top: 70px;
 # TALLERES
 --------------------------------------------------------------*/
 .pricing .pricing-tem {
- background-image:url("../img/marcocursos.png");
- background-size: cover;
-
-  box-shadow: url("../img/marcocursos.png");
-  padding: 60px 26px;
+  background-image: url("../img/marcodelcurso.png");
+  box-shadow: url("../img/marcodelcurso.png");
+  padding: 120px 50px;
   text-align: center;
- padding-bottom: 90PX;
+  border-radius: 4px;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
   height: 100%;
-  
 }
+
+.pricing .pricing-tem2 {
+  background-image: url("../img/marcodelcurso2.png");
+  box-shadow: url("../img/marcodelcurso2.png");
+  padding: 120px 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 100%;
+}
+
 
 /*.pricing .pricing-tem:hover {
   background-image: url("../img/marcocursos.png") ;
@@ -1396,8 +1415,13 @@ padding-top: 70px;
 @media (min-width: 1200px) {
   .pricing .pricing-tem:hover {
     transform: scale(1.1);
-   
-  }
+    }
+}
+
+@media (min-width: 1200px) {
+  .pricing .pricing-tem2:hover {
+    transform: scale(1.1);
+    }
 }
 
 .pricing h3 {
@@ -1405,23 +1429,25 @@ padding-top: 70px;
   font-size: 20px;
   margin-bottom: 15px;
   color: #F8F3E7;
-  padding-top: 30px;
+  padding-bottom: 5px;
 }
 
 .pricing p {
-  color:#F8F3E7
+  color:#F8F3E7;
 }
 
 .pricing h2 {
-  color:#F8F3E7
+  color:#F8F3E7;
+  padding-top: 50px;
 }
 
 .pricing h4 {
-  font-family: "New Frank";
+  font-family: "Roboto";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 30px;
-  padding: 0px 100px;
+  padding: 0px 120px;
+  line-height: 24px;
   color: #F8F3E7;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -1494,6 +1520,8 @@ padding-top: 70px;
 .pricing .btn-buy:hover {
   background: var(--accent-color);
   color:#AC7536;
+  
+
 }
 
 .pricing .featured {
@@ -1526,16 +1554,27 @@ padding-top: 70px;
 }
 
 .pricing .pricing-tem {
-
-  background-color: #4d3c1500;
+  background-image: url("../img/marcodelcurso.png");
 }
 
+.pricing .pricing-tem2 {
+  background-image: url("../img/marcodelcurso2.png");
+}
 
+.pricing .iconoo {
+width: 50px;
+height: 50px;
+}
+
+.pricing .iconooo {
+  width: 50px;
+  height: 50px;
+  }
 
   .pricing .icono2 {
     width: 200px;
     position: center;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     padding-top: 10px;
   
     }
@@ -1557,8 +1596,8 @@ padding-top: 70px;
 }
 
 .faq .faq-container .faq-item h3 {
-  font-family: New Frank, Roboto;
-  font-weight: 600;
+  font-family: Roboto, New frank;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   margin: 0 30px 0 0;
@@ -1743,9 +1782,9 @@ padding-top: 70px;
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
-  background-image: url("../img2/cajacontacto.png");;
+  background-image: url("../img2/cajacontacto.png");
   background-size: cover;
-  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+  
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
@@ -1756,10 +1795,6 @@ padding-top: 70px;
   transition: 0.3s;
 }
 
-.testimonials .stars {
-  color: #AC7536 ;
-  
-}
 
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
@@ -1767,7 +1802,7 @@ padding-top: 70px;
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #AC7536;
+  color: #E3A819;
   margin: 0 1px;
 }
 
