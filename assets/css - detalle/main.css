@@ -11,8 +11,12 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-  --default-font: "New Frank", "Roboto", 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+  --default-font:  "Roboto", "New Frank",'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
   --heading-font:'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
   --nav-font: 'https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap';
   font-weight: 600;
@@ -765,16 +769,18 @@ h6 {
   color: #F8F3E7;
   background-color: var(--background-color);
   position: relative;
-  
+  padding: 100px;
+  background-image: url("../img2/home.png");
+  background-position: top right;
+  background-size: cover;
 }
 
 .page-title .heading {
-  padding: 120px 0;
+  padding: 0px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  padding-top: 170px;
+  padding-top: 100px;
   padding-bottom: 80px;
-  background-image: url("../img2/home.png");
-  background-size: cover;
+
 }
 
 .page-title .heading h1 {
@@ -783,7 +789,9 @@ h6 {
   color: #F8F3E7;
 }
 
-
+.page-title .heading p {
+margin-right: 250px;
+}
 
 .page-title nav {
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
@@ -995,7 +1003,7 @@ section,
   color: var(#F8F3E7);
   text-transform: uppercase;
   color:#F8F3E7;
-  font-family: "new-frank", sans-serif;
+  font-family: "roboto", "new frank";
   font-weight: 700;
 
 }
@@ -1048,10 +1056,10 @@ padding-top: 70px;
 # Values Section
 --------------------------------------------------------------*/
 .values .card {
-  background-color: #f8f3e786;
+  background-color: #F8F3E7;
   color: var(--default-color);
   padding: 30px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
+  
   text-align: center;
   transition: 0.3s;
   height: 100%;
@@ -1059,7 +1067,7 @@ padding-top: 70px;
 }
 
 .values .card img {
-  padding: 30px 50px;
+  padding: 0px 0px;
   transition: 0.5s;
   transform: scale(1.1);
 }
@@ -1068,9 +1076,10 @@ padding-top: 70px;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 18px;
+  padding-top: 50px;
 }
 
-.values .card:hover {
+.values .card img:hover {
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -1089,7 +1098,7 @@ padding-top: 70px;
 .stats .stats-item {
   background-color: #102A4B;
   /*box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);*/
-  padding: 30px;
+  padding: 10px;
 }
 
 .stats .stats-item i {
@@ -1100,9 +1109,12 @@ padding-top: 70px;
   
 }
 
-.stats .stats-item span {
+.stats .stats-item h1 {
   color: #F8F3E7;
-  font-size: 36px;
+  font-size: 20px;
+  line-height: 10px;
+  padding-top: 10px;
+  font-family: "gelasio";
   display: block;
   font-weight: 600;
 }
@@ -1110,13 +1122,19 @@ padding-top: 70px;
 .stats .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
   font-size: 16px;
   color: #F8F3E7;
 }
 
 .stats.stats.section {
   background-color: #102A4B;
+  
+}
+
+.stats .icono{
+  width: 42px;
+  height: 42px;
   
 }
 
@@ -1159,7 +1177,7 @@ padding-top: 70px;
   background-image: url("../img/cursos1.png");
   background-size: cover;
 padding-bottom: 150px;
-padding-top: 120px;
+padding-top: 160px;
 }
 
 .features.features p {
@@ -1869,6 +1887,8 @@ padding-top: 120px;
   
   background-image: url("../img2/marcochef.png");
   background-size: contain;
+  background-position: bottom;
+
  }
 
 .team .team-member .member-img {
@@ -1952,7 +1972,7 @@ padding-top: 120px;
 
 .team .team-member:hover {
   transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: url("../img2/marcochef.png");
   background-image: url("../img2/marcochef.png");
  background-size: contain;
 }
@@ -1963,8 +1983,9 @@ padding-top: 120px;
 }
 
 .team.team.section {
-  background-color: #F8F3E7;
+  background-image: url("../img/BENEFICIOS.png");;
   background-size: cover;
+  background-repeat: no-repeat;
   
 }
 
