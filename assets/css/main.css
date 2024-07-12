@@ -987,6 +987,15 @@ section,
  position: static;
 }
 
+@media (max-width: 640px) {
+  .about .content {
+    background-image: url("../img/mobile/cajamobile.png");
+    background-size: cover;
+  }
+}
+
+
+
 .about .content h3 {
   font-size: 15px;
   color: var(#F8F3E7);
@@ -1405,6 +1414,13 @@ padding-top: 70px;
 }
 
 
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
 /*.pricing .pricing-tem:hover {
   background-image: url("../img/marcocursos.png") ;
 
@@ -1441,6 +1457,12 @@ padding-top: 70px;
   padding-top: 50px;
 }
 
+@media (max-width: 640px) {
+  .pricing h2 {
+    padding-top: 100px;
+  }
+}
+
 .pricing h4 {
   font-family: "Roboto";
   font-weight: 400;
@@ -1451,6 +1473,13 @@ padding-top: 70px;
   color: #F8F3E7;
   padding-top: 15px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+  .pricing h4 {
+    padding: 0px 5px;
+    padding-top: 5px;
+  }
 }
 
 .pricing .price {
@@ -1892,8 +1921,10 @@ height: 50px;
 
 .clients .section-title p {
 color: #F8F3E7;
-
 }
+
+
+
 
 .clients .section-title h2 {
   color: #F8F3E7;
@@ -2019,6 +2050,18 @@ color: #F8F3E7;
   margin-right: 10px;
   }
 
+
+  @media (max-width: 640px) {
+    .recent-posts .col-lg-6 {
+      padding-bottom:  30px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .recent-posts .section {
+      padding:  10px;
+    }
+  }
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -2027,6 +2070,14 @@ color: #F8F3E7;
   background-size: cover;
   background-position: center;
   padding: 30px;
+}
+
+@media (max-width: 640px) {
+  .contact .info-item {
+  background-image: url("../img/mobile/contacto1.png");
+  background-size: cover;
+  background-position: center;
+  }
 }
 
 .contact .info-item i {
