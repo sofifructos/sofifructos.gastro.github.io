@@ -166,6 +166,14 @@ h6 {
   margin-right: 8px;
 }
 
+@media (max-width: 640px) {
+  .header .logo img {
+    max-height: 22px;
+    margin-right: 15px;
+    
+  }
+}
+
 .header .logo h1 {
   font-size: 30px;
   margin: 0;
@@ -824,6 +832,7 @@ section,
   section,
   .section {
     scroll-margin-top: 56px;
+    padding: 30px 10px 30px 10px;
   }
 }
 
@@ -955,14 +964,27 @@ section,
 
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 36px;
+    padding-top: 280px; 
+    background-size: cover; 
+    
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
+  }
+
+  .hero .row {
+     margin-right: 0px;
+     margin-left: 0px;
+     padding-top: 80px;  
+    }
+
+  .hero {
+    background: url(../img/mobile/hero.png) top center no-repeat;
   }
 }
 
@@ -991,6 +1013,7 @@ section,
   .about .content {
     background-image: url("../img/mobile/cajamobile.png");
     background-size: cover;
+    padding: 50px;
   }
 }
 
@@ -1183,7 +1206,13 @@ padding-top: 70px;
 .alt-features {
   background-image: url("../img/BENEFICIOS.png");
   background-size: cover;
+}
 
+@media (max-width: 640px) {
+  .alt-features {
+    background-image: url("../img/mobile/beneficios.png");
+    background-size: cover;
+  }
 }
 
 .alt-features img{
@@ -1419,14 +1448,20 @@ padding-top: 70px;
     font-size: 28px;
     line-height: 36px;
   }
+
+  .pricing .pricing-tem {
+    background-position: center;
+  }
+  
+  .pricing .pricing-tem2 {
+    background-position: center;
+  }
 }
 
 /*.pricing .pricing-tem:hover {
   background-image: url("../img/marcocursos.png") ;
 
 }*/
-
-
 
 @media (min-width: 1200px) {
   .pricing .pricing-tem:hover {
@@ -1459,7 +1494,7 @@ padding-top: 70px;
 
 @media (max-width: 640px) {
   .pricing h2 {
-    padding-top: 100px;
+    padding-top: 35px;
   }
 }
 
@@ -1549,8 +1584,6 @@ padding-top: 70px;
 .pricing .btn-buy:hover {
   background: var(--accent-color);
   color:#AC7536;
-  
-
 }
 
 .pricing .featured {
@@ -1574,8 +1607,6 @@ padding-top: 70px;
   padding-bottom: 220px;
  }
 
-
- 
 .pricing .section-title {
   padding-top: 80px;
   padding-bottom: 20px;
@@ -1608,7 +1639,20 @@ height: 50px;
   
     }
 
+    @media (max-width: 640px) {
 
+
+      .pricing {
+        background-image: url("../img/mobile/fondocursos.png");
+        background-position: center;
+        background-size: cover;
+        
+      }
+
+      .pricing .section-title {
+        padding-top: 35px;
+      }
+    }   
 
 /*--------------------------------------------------------------
 # PREGUNTAS Y RESPUESTAS
@@ -1692,6 +1736,14 @@ height: 50px;
   background-image: url("../img/fyq.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 640px) {
+  .faq.faq.section {
+    background-image: url("../img/mobile/preguntas.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 
@@ -1813,7 +1865,6 @@ height: 50px;
 .testimonials .testimonial-item {
   background-image: url("../img2/cajacontacto.png");
   background-size: cover;
-  
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
@@ -1822,6 +1873,15 @@ height: 50px;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
+}
+
+@media (max-width: 640px) {
+  .testimonials .testimonial-item {
+    background-image: url("../img/mobile/opiniones.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 
@@ -1923,9 +1983,6 @@ height: 50px;
 color: #F8F3E7;
 }
 
-
-
-
 .clients .section-title h2 {
   color: #F8F3E7;
 }
@@ -1957,10 +2014,20 @@ color: #F8F3E7;
   background-color: #012970;
   background-image: url("../img/FONDO DE MARCAS2.png");
   background-size: cover; 
- 
-  margin-top: 00px;
+  margin-top: 0px;
   padding: 90px; 
   padding-bottom: 100px;
+}
+
+
+@media (max-width: 640px) {
+  .clients {
+    padding: 80px; 
+  }
+
+  .clients .swiper-pagination {
+    padding-bottom: 25px;
+  }
 }
 
 .clients .section-title {
@@ -2053,13 +2120,13 @@ color: #F8F3E7;
 
   @media (max-width: 640px) {
     .recent-posts .col-lg-6 {
-      padding-bottom:  30px;
+      padding-bottom:  40px;
     }
   }
 
   @media (max-width: 640px) {
     .recent-posts .section {
-      padding:  10px;
+      padding:  0px;
     }
   }
 /*--------------------------------------------------------------
@@ -2075,8 +2142,9 @@ color: #F8F3E7;
 @media (max-width: 640px) {
   .contact .info-item {
   background-image: url("../img/mobile/contacto1.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   }
 }
 
@@ -2105,6 +2173,14 @@ color: #F8F3E7;
   background-position: center;
   padding: 30px;
   height: 100%;
+}
+
+@media (max-width: 640px) {
+  .contact .php-email-form {
+  background-image: url("../img/mobile/contacto.png");
+  background-size: cover;
+  background-position: center;
+  }
 }
 
 .contact .php-email-form input[type=text],
