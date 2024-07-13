@@ -170,6 +170,7 @@ h6 {
   .header .logo img {
     max-height: 22px;
     margin-right: 15px;
+    margin-left: 10px;
     
   }
 }
@@ -223,7 +224,7 @@ h6 {
 ------------------------------*/
 .index-page .header {
   --background-color: #102A4B;
-  padding: 16px;
+  
 }
 
 /* Index Page Header on Scroll
@@ -288,7 +289,7 @@ h6 {
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
+    background: #F8F3E7;
     display: block;
     position: absolute;
     visibility: hidden;
@@ -319,7 +320,7 @@ h6 {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: #E3A819;
   }
 
   .navmenu .dropdown:hover>ul {
@@ -358,6 +359,7 @@ h6 {
     z-index: 9997;
   }
 
+
   .navmenu ul {
     display: none;
     position: absolute;
@@ -365,7 +367,7 @@ h6 {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--nav-mbile-background-color);
+    background-color: #F8F3E7;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -374,11 +376,11 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: #102A4B;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -391,6 +393,8 @@ h6 {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
+    color: #F8F3E7;
+    font-weight: 600;
     width: 30px;
     height: 30px;
     display: flex;
@@ -398,7 +402,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color: #E3A819;
   }
 
   .navmenu a i:hover,
@@ -410,7 +414,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #E3A819;
   }
 
   .navmenu .active i,
@@ -1450,11 +1454,13 @@ padding-top: 70px;
   }
 
   .pricing .pricing-tem {
-    background-position: center;
+    background-position:  center;
+    background-repeat: no-repeat;
   }
   
   .pricing .pricing-tem2 {
     background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1494,7 +1500,7 @@ padding-top: 70px;
 
 @media (max-width: 640px) {
   .pricing h2 {
-    padding-top: 35px;
+    padding-top: 70px;
   }
 }
 
@@ -1644,13 +1650,13 @@ height: 50px;
 
       .pricing {
         background-image: url("../img/mobile/fondocursos.png");
-        background-position: center;
+        background-position: static  center;
         background-size: cover;
         
       }
 
       .pricing .section-title {
-        padding-top: 35px;
+        padding-top: 40px;
       }
     }   
 
@@ -1880,7 +1886,8 @@ height: 50px;
     background-image: url("../img/mobile/opiniones.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: absolute center;
+   
   }
 }
 
@@ -2179,7 +2186,7 @@ color: #F8F3E7;
   .contact .php-email-form {
   background-image: url("../img/mobile/contacto.png");
   background-size: cover;
-  background-position: center;
+  background-position: absolute;
   }
 }
 
