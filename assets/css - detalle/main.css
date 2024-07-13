@@ -166,6 +166,14 @@ h6 {
   margin-right: 8px;
 }
 
+@media (max-width: 640px) {
+  .header .logo img {
+    max-height: 22px;
+    margin-right: 15px;
+    
+  }
+}
+
 .header .logo h1 {
   font-size: 30px;
   margin: 0;
@@ -835,8 +843,10 @@ section,
   section,
   .section {
     scroll-margin-top: 56px;
+    padding: 30px 10px 30px 10px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -996,6 +1006,14 @@ section,
  position: static;
 }
 
+@media (max-width: 640px) {
+  .about .content {
+    background-image: url("../img/mobile/cajamobile.png");
+    background-size: cover;
+    padding: 50px;
+  }
+}
+
 .about .content h3 {
   font-size: 14px;
  
@@ -1138,6 +1156,7 @@ padding-top: 70px;
   
 }
 
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -1150,11 +1169,11 @@ padding-top: 70px;
 }
 
 .features .feature-box h3 {
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0;
   color: #F8F3E7;
-  font-family: "new frank";
+  font-family: "roboto";
 }
 
 .features .feature-box i {
@@ -1182,19 +1201,27 @@ padding-top: 160px;
 
 .features.features p {
   color: #F8F3E7;
-
 }
 
 .features.features h2 {
   color: #F8F3E7;
-
 }
 
 .features.features.img-fluid  {
   padding-bottom: 500px;
-
 }
 
+@media (max-width: 640px) {
+  .features.features.section {
+    background-image: url("../img/mobile/fondocursos2.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .features.features h2 {
+    padding-top: 40px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Alt Features Section
@@ -1225,7 +1252,6 @@ padding-top: 160px;
 .alt-features {
   background-image: url("../img/BENEFICIOS.png");
   background-size: cover;
-
 }
 
 .alt-features img{
@@ -1239,6 +1265,13 @@ padding-top: 160px;
   height: 40px;
   margin-right: 10px;
   }
+
+  @media (max-width: 640px) {
+    .alt-features {
+      background-image: url("../img/mobile/beneficios.png");
+      background-size: cover;
+    }
+  }  
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1983,7 +2016,7 @@ padding-top: 160px;
 }
 
 .team.team.section {
-  background-image: url("../img/BENEFICIOS.png");;
+  background-image: url("../img/BENEFICIOS.png");
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -1999,7 +2032,17 @@ padding-top: 160px;
   padding-top: 40px;
 }
 
+@media (max-width: 640px) {
+  .team.team.section {
+    background-image: url("../img/mobile/beneficios.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
+  .team .team-member {
+    position: right;
+  }
+}
 
 /*--------------------------------------------------------------
 # Clients Section
@@ -2053,6 +2096,24 @@ color: #F8F3E7;
 
 .clients .section-title {
   padding-top: 20px;
+}
+
+@media (max-width: 640px) {
+  .clients {
+    padding: 80px; 
+  }
+
+  .clients .swiper-pagination {
+    padding-bottom: 25px;
+  }
+
+  .clients .section-title h2{
+    padding:0px;
+  }
+
+  .clients .section-title p{
+    
+  }
 }
 /*--------------------------------------------------------------
 # Recent Posts Section
@@ -2163,6 +2224,21 @@ color: #F8F3E7;
   background-size: cover;
   padding: 30px;
   height: 100%;
+}
+
+@media (max-width: 640px) {
+  .contact .info-item {
+  background-image: url("../img/mobile/contacto1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .contact .php-email-form {
+    background-image: url("../img/mobile/contacto.png");
+    background-size: cover;
+    background-position: center;
+    }
 }
 
 .contact .php-email-form input[type=text],
