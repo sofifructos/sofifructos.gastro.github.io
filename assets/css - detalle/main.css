@@ -168,9 +168,7 @@ h6 {
 
 @media (max-width: 640px) {
   .header .logo img {
-    max-height: 22px;
-    margin-right: 6px;
-    margin-left: 2px;
+    max-height: 21px;
   }
 }
 
@@ -206,7 +204,7 @@ h6 {
 
   .header .btn-getstarted {
     order: 2;
-    margin: 0 15px 0 0;
+    margin: 0 5px 0 0;
     padding: 6px 15px;
   }
 
@@ -349,7 +347,7 @@ h6 {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
-    margin-right: 10px;
+    margin-right: 0px;
     cursor: pointer;
     transition: color 0.3s;
   }
@@ -2117,17 +2115,17 @@ color: #F8F3E7;
 
 @media (max-width: 640px) {
   .clients {
-    padding: 80px; 
-    background-image: url("../img/mediopago.png");
-    background-position: center;
+    padding: 10px; 
+    background-image: url("../img/mobile/fondomarcas2.png");
+    background-size: cover;
   }
 
   .clients .swiper-pagination {
     padding-bottom: 25px;
   }
 
-  .clients .section-title h2{
-    padding:0px;
+  .clients .section-title  {
+   padding: 30px;
   }
 
 
