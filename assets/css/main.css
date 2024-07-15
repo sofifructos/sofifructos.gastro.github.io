@@ -1424,6 +1424,9 @@ padding-top: 70px;
 .pricing .pricing-tem {
   background-image: url("../img/marcodelcurso.png");
   box-shadow: url("../img/marcodelcurso.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 120px 50px;
   text-align: center;
   border-radius: 4px;
@@ -1436,6 +1439,9 @@ padding-top: 70px;
 .pricing .pricing-tem2 {
   background-image: url("../img/marcodelcurso2.png");
   box-shadow: url("../img/marcodelcurso2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 120px 50px;
   text-align: center;
   border-radius: 4px;
@@ -1875,7 +1881,9 @@ height: 50px;
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   background-image: url("../img2/cajacontacto.png");
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   box-sizing: content-box;
   padding: 30px;
   margin: 40px 30px;
@@ -2150,7 +2158,9 @@ color: #F8F3E7;
 --------------------------------------------------------------*/
 .contact .info-item {
   background-image: url("../img/marco.png");
-  background-size: cover;
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   padding: 30px;
 }
@@ -2186,9 +2196,9 @@ color: #F8F3E7;
 .contact .php-email-form {
   background-image: url("../img/cajacontacto.png");
   background-size: cover;
-  background-position: center;
   padding: 30px;
   height: 100%;
+  
 }
 
 @media (max-width: 640px) {

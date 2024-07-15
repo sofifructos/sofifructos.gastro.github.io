@@ -1021,6 +1021,7 @@ section,
 .about .content {
   background-image: url("../img/caja1.png");
   padding: 70px;
+  background-size: cover;
   width: 100%;
  position: static;
 }
@@ -2211,7 +2212,10 @@ color: #F8F3E7;
 --------------------------------------------------------------*/
 .contact .info-item {
   background-image: url("../img/marco.png");
-  background-size: cover;
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 30px;
 }
 
